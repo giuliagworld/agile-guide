@@ -1,0 +1,89 @@
+/* Position and style for nav banner */
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 62px;
+  background-color: $black-overlay;
+  background-repeat: no-repeat;
+  background-size: 52px;
+  background-position: left 10px center;
+  @include media-breakpoint-up(md) {
+    height: 102px;
+    background-position: left 20px center;
+    background-size: 80px;
+  }
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 16px;
+  top: 16px;
+  @include media-breakpoint-up(md) {
+    right: 36px;
+    top: 36px;
+  }
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: $white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1em 0;
+  font-size: 1.30em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+  .menu-item {
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 600;
+    color: $white;
+    text-decoration: none;
+    &.contact {
+      padding-left: 20px;
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 20px;
+      font-size: 16px;
+      font-weight: 400;
+    }
+    &.social {
+      text-align: center;
+      float: left;
+      margin: 40px 12px 40px;
+    }
+  }
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
