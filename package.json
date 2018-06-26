@@ -1,5 +1,5 @@
 {
-  "name": "therotisserieco",
+  "name": "agile-guide",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/giuliagworld/therotisserieco.git"
+    "url": "git+https://github.com/giuliagworld/agile-guide.git"
   },
   "keywords": [],
   "author": "giulia",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/giuliagworld/therotisserieco/issues"
+    "url": "https://github.com/giuliagworld/agile-guide/issues"
   },
-  "homepage": "https://giuliagworld.github.io/therotisserieco/",
+  "homepage": "https://giuliagworld.github.io/agile-guide/",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.44",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.46",
@@ -35,6 +35,7 @@
     "image-webpack-loader": "^4.2.0",
     "node-sass": "^4.8.3",
     "react-burger-menu": "^2.4.2",
+    "react-social-icons": "^3.0.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "webpack": "^4.5.0",
@@ -44,7 +45,6 @@
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.3.1",
-    "react-dom": "^16.3.1",
-    "react-social-icons": "^3.0.0"
+    "react-dom": "^16.3.1"
   }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 function SprintReview(props) {
   return (
-    <section id="sprint-review" className="">
+    <section id="sprint-review" className="sprint-review">
       <div className="container-fluid">
         <div className="container">
           <h1 className="heading-1">Spint Review</h1>

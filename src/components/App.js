@@ -39,7 +39,7 @@ class App extends React.Component {
       <div>
         <div className="nav-container">
           <Nav right isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)}>
-            <a className="menu-item" href="#home" onClick={() => this.closeMenu('header')}>Home</a>
+            <a className="menu-item" href="#" onClick={() => this.closeMenu('header')}>Home</a>
             <a className="menu-item" href="#sprint-review" onClick={() => this.closeMenu('sprintReview')}>Sprint Review</a>
             <SocialIcon className="menu-item social" url="https://www.facebook.com/" color="white" />
             <SocialIcon className="menu-item social" url="https://www.twitter.com/" color="white" />
