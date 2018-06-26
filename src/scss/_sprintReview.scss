@@ -1,6 +1,5 @@
 .sprint-review {
   width: 100%;
-  height: 100vh;
   padding-top: 62px;
   padding-bottom: 62px;
   background-color: $black;
@@ -8,6 +7,7 @@
   background-size: auto;
   color: $white;
   @include media-breakpoint-up(md) {
+    height: 100vh;
     padding-top: 102px;
     max-height: 995px;
     background-size: cover;
@@ -17,5 +17,16 @@
     height: 100%;
     flex-direction: column;
     justify-content: center;
+    .rules-list {
+      padding-left: 20px;
+      @include media-breakpoint-up(md) {
+        margin-left: 60px;
+        margin-right: 60px;
+      }
+      .rules-item {
+        padding: 10px 0;
+        text-align: left;
+      }
+    }
   }
 }
