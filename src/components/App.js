@@ -7,7 +7,6 @@ import Footer from './Footer';
 
 import { SocialIcon } from 'react-social-icons';
 
-
 class App extends React.Component {
 
   constructor(props) {

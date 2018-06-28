@@ -7,12 +7,40 @@
   background-size: auto;
   color: $white;
   @include media-breakpoint-up(md) {
+    min-height: 100vh;
     height: 100vh;
     padding-top: 102px;
     max-height: 995px;
     background-size: cover;
   }
+  .scrollspy {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    list-style: none;
+    .item {
+      padding-left: 30px;
+      background-image: url("/assets/circle-white.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 15px;
+    }
+    a {
+      color: green;
+    }
+    .is-current {
+      background-image: url("/assets/dot-circle-white.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 15px;
+      padding-left: 30px;
+      a {
+        color: red;
+      }
+    }
+  }
   .container-fluid {
+    background-color: $black;
     display: flex;
     height: 100%;
     flex-direction: column;

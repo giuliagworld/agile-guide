@@ -1268,11 +1268,34 @@ body {
   color: white; }
   @media (min-width: 768px) {
     .sprint-review {
+      min-height: 100vh;
       height: 100vh;
       padding-top: 102px;
       max-height: 995px;
       background-size: cover; } }
+  .sprint-review .scrollspy {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    list-style: none; }
+    .sprint-review .scrollspy .item {
+      padding-left: 30px;
+      background-image: url("/assets/circle-white.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 20px; }
+    .sprint-review .scrollspy a {
+      color: green; }
+    .sprint-review .scrollspy .is-current {
+      background-image: url("/assets/dot-circle-white.svg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: 20px;
+      padding-left: 30px; }
+      .sprint-review .scrollspy .is-current a {
+        color: red; }
   .sprint-review .container-fluid {
+    background-color: black;
     display: flex;
     height: 100%;
     flex-direction: column;
