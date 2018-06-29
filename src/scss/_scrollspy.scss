@@ -1,0 +1,31 @@
+  .scrollspy {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 50%;
+      list-style: none;
+      text-align: left;
+      .item {
+        padding-left: 30px;
+        background-image: url("/assets/circle-white.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 15px;
+      }
+      a {
+        display: inline-block;
+      }
+      .is-current {
+        background-image: url("/assets/dot-circle-white.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 15px;
+        padding-left: 30px;
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }

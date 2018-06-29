@@ -8,6 +8,10 @@ function SprintReview(props) {
         <div className="container">
           <h1 className="heading-1">Spint Review</h1>
           <h2 className="body-2"><em>"A Sprint Review is held at the end of the Sprint to <strong className="red">inspect</strong> the Increment and <strong className="red">adapt</strong> the Product Backlog if needed"</em></h2>
+        </div>
+      </div>
+      <div id="rules" className="container-fluid">
+        <div className="container">
           <h3 className="heading-2">The Rules</h3>
           <ul className="rules-list">
             <li className="rules-item">The Product Owner explains what Product Backlog items have been “Done” and what has not been “Done”.</li>
@@ -16,12 +20,18 @@ function SprintReview(props) {
             <li className="rules-item"><strong className="red">Proposal!</strong> The Product Owner discusses the Product Backlog as it stands and check whether it needs to be adapted to new business requirements that might have arised.</li>
             <li className="rules-item">The entire group collaborates on what to do next, so that the Sprint Review provides valuable input to subsequent Sprint Planning.</li>
           </ul>
+        </div>
+      </div>
+      <div id="goal" className="container-fluid">
+        <div className="container">
           <h3 className="heading-2">The Goal</h3>
           <p className="body-2">The result of the Sprint Review is a revised Product Backlog that defines the probable Product Backlog items for the next Sprint. The Product Backlog may also be adjusted overall to meet new opportunities.</p>
         </div>
       </div>
-      <Scrollspy items={['catcher']} currentClassName="is-current" className="scrollspy">
-        <li className="item"><a href="#catcher">Catcher</a></li>
+      <Scrollspy items={['catcher', 'rules', 'goal']} className="scrollspy" currentClassName="is-current">
+        <li className="item"><a href="#catcher"></a></li>
+        <li className="item"><a href="#rules"></a></li>
+        <li className="item"><a href="#goal"></a></li>
       </Scrollspy>
     </section>
   )
