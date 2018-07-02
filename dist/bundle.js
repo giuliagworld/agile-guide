@@ -23994,6 +23994,10 @@ var _Header = _interopRequireDefault(__webpack_require__(/*! ./Header */ "./src/
 
 var _SprintReview = _interopRequireDefault(__webpack_require__(/*! ./SprintReview */ "./src/components/SprintReview.js"));
 
+var _Done = _interopRequireDefault(__webpack_require__(/*! ./Done */ "./src/components/Done.js"));
+
+var _Ready = _interopRequireDefault(__webpack_require__(/*! ./Ready */ "./src/components/Ready.js"));
+
 var _Footer = _interopRequireDefault(__webpack_require__(/*! ./Footer */ "./src/components/Footer.js"));
 
 var _reactSocialIcons = __webpack_require__(/*! react-social-icons */ "./node_modules/react-social-icons/lib/react-social-icons.js");
@@ -24041,7 +24045,7 @@ function (_React$Component) {
 
     _this.state = {
       menuOpen: false,
-      active: 'sprintReview'
+      active: 'ready'
     };
     return _this;
   } // This keeps your state in sync with the opening/closing of the menu
@@ -24073,15 +24077,27 @@ function (_React$Component) {
         onClick: function onClick() {
           return _this2.closeMenu('sprintReview');
         }
-      }, "Sprint Review"), _react.default.createElement(_reactSocialIcons.SocialIcon, {
+      }, "Sprint Review"), _react.default.createElement("a", {
+        className: "menu-item",
+        href: "#done",
+        onClick: function onClick() {
+          return _this2.closeMenu('done');
+        }
+      }, "\"Done\""), _react.default.createElement("a", {
+        className: "menu-item",
+        href: "#ready",
+        onClick: function onClick() {
+          return _this2.closeMenu('ready');
+        }
+      }, "\"Ready\""), _react.default.createElement(_reactSocialIcons.SocialIcon, {
         className: "menu-item social",
-        url: "https://www.facebook.com/",
+        url: "https://www.linkedin.com/in/giuliagazzabin",
         color: "white"
       }), _react.default.createElement(_reactSocialIcons.SocialIcon, {
         className: "menu-item social",
-        url: "https://www.twitter.com/",
+        url: "https://github.com/giuliagworld",
         color: "white"
-      }))), this.state.active == 'header' ? _react.default.createElement(_Header.default, null) : null, this.state.active == 'sprintReview' ? _react.default.createElement(_SprintReview.default, null) : null, _react.default.createElement(_Footer.default, null));
+      }))), this.state.active == 'header' ? _react.default.createElement(_Header.default, null) : null, this.state.active == 'sprintReview' ? _react.default.createElement(_SprintReview.default, null) : null, this.state.active == 'done' ? _react.default.createElement(_Done.default, null) : null, this.state.active == 'ready' ? _react.default.createElement(_Ready.default, null) : null, _react.default.createElement(_Footer.default, null));
     }
   }]);
 
@@ -24089,6 +24105,96 @@ function (_React$Component) {
 }(_react.default.Component);
 
 var _default = App;
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./src/components/Done.js":
+/*!********************************!*\
+  !*** ./src/components/Done.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _reactScrollspy = _interopRequireDefault(__webpack_require__(/*! react-scrollspy */ "./node_modules/react-scrollspy/lib/Scrollspy.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Done(props) {
+  return _react.default.createElement("section", {
+    id: "done",
+    className: "done"
+  }, _react.default.createElement("div", {
+    id: "catcher",
+    className: "container-fluid"
+  }, _react.default.createElement("div", {
+    className: "container"
+  }, _react.default.createElement("h1", {
+    className: "heading-1"
+  }, "\"Done\""), _react.default.createElement("h2", {
+    className: "body-2"
+  }, _react.default.createElement("em", null, "\"A clear and concise ", _react.default.createElement("strong", {
+    className: "red"
+  }, "list of requirements"), " that software must adhere to for the team to call it complete.\"")))), _react.default.createElement("div", {
+    id: "rules",
+    className: "container-fluid"
+  }, _react.default.createElement("div", {
+    className: "container"
+  }, _react.default.createElement("h3", {
+    className: "heading-2"
+  }, "The Rules"), _react.default.createElement("ul", {
+    className: "rules-list"
+  }, _react.default.createElement("li", {
+    className: "rules-item"
+  }, "The Product Owner explains what Product Backlog items have been \u201CDone\u201D and what has not been \u201CDone\u201D."), _react.default.createElement("li", {
+    className: "rules-item"
+  }, "The Development Team discusses what went well during the Sprint, what problems it ran into, and how those problems were solved."), _react.default.createElement("li", {
+    className: "rules-item"
+  }, "The Development Team demonstrates the work that it has \u201CDone\u201D and answers questions about the Increment."), _react.default.createElement("li", {
+    className: "rules-item"
+  }, _react.default.createElement("strong", {
+    className: "red"
+  }, "Proposal!"), " The Product Owner discusses the Product Backlog as it stands and check whether it needs to be adapted to new business requirements that might have arised."), _react.default.createElement("li", {
+    className: "rules-item"
+  }, "The entire group collaborates on what to do next, so that the Sprint Review provides valuable input to subsequent Sprint Planning.")))), _react.default.createElement("div", {
+    id: "goal",
+    className: "container-fluid"
+  }, _react.default.createElement("div", {
+    className: "container"
+  }, _react.default.createElement("h3", {
+    className: "heading-2"
+  }, "The Goal"), _react.default.createElement("p", {
+    className: "body-2"
+  }, "The result of the Sprint Review is a revised Product Backlog that defines the probable Product Backlog items for the next Sprint. The Product Backlog may also be adjusted overall to meet new opportunities."))), _react.default.createElement(_reactScrollspy.default, {
+    items: ['catcher', 'rules', 'goal'],
+    className: "scrollspy",
+    currentClassName: "is-current"
+  }, _react.default.createElement("li", {
+    className: "item"
+  }, _react.default.createElement("a", {
+    href: "#catcher"
+  })), _react.default.createElement("li", {
+    className: "item"
+  }, _react.default.createElement("a", {
+    href: "#rules"
+  })), _react.default.createElement("li", {
+    className: "item"
+  }, _react.default.createElement("a", {
+    href: "#goal"
+  }))));
+}
+
+var _default = Done;
 exports.default = _default;
 
 /***/ }),
@@ -24168,6 +24274,125 @@ exports.default = _default;
 
 /***/ }),
 
+/***/ "./src/components/Ready.js":
+/*!*********************************!*\
+  !*** ./src/components/Ready.js ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _reactScrollspy = _interopRequireDefault(__webpack_require__(/*! react-scrollspy */ "./node_modules/react-scrollspy/lib/Scrollspy.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function Ready(props) {
+  return _react.default.createElement("section", {
+    id: "ready",
+    className: "ready"
+  }, _react.default.createElement("div", {
+    id: "catcher",
+    className: "container-fluid"
+  }, _react.default.createElement("div", {
+    className: "container"
+  }, _react.default.createElement("h1", {
+    className: "heading-1"
+  }, "\"Ready\""), _react.default.createElement("h2", {
+    className: "body-2"
+  }, _react.default.createElement("em", null, "\"A story is ", _react.default.createElement("strong", {
+    className: "red"
+  }, "Ready"), " when the team can agree that they can get it ", _react.default.createElement("strong", {
+    className: "red"
+  }, "Done"), "\".")))), _react.default.createElement("div", {
+    id: "rules",
+    className: "container-fluid"
+  }, _react.default.createElement("div", {
+    className: "container"
+  }, _react.default.createElement("h3", {
+    className: "heading-2"
+  }, "A good User Story is:"), _react.default.createElement("ul", {
+    className: "rules-list"
+  }, _react.default.createElement("li", {
+    className: "rules-item"
+  }, _react.default.createElement("strong", {
+    className: "red"
+  }, "I"), " (Independent). The PBI should be self-contained and it should be possible to bring it into progress without a dependency upon another PBI or an external resource."), _react.default.createElement("li", {
+    className: "rules-item"
+  }, _react.default.createElement("strong", {
+    className: "red"
+  }, "N"), " (Negotiable). A good PBI should leave room for discussion regarding its optimal implementation."), _react.default.createElement("li", {
+    className: "rules-item"
+  }, _react.default.createElement("strong", {
+    className: "red"
+  }, "V"), " (Valuable). The value a PBI delivers to stakeholders should be clear."), _react.default.createElement("li", {
+    className: "rules-item"
+  }, _react.default.createElement("strong", {
+    className: "red"
+  }, "E"), " (Estimable). A PBI must have a size relative to other PBIs."), _react.default.createElement("li", {
+    className: "rules-item"
+  }, _react.default.createElement("strong", {
+    className: "red"
+  }, "S"), " (Small). PBIs should be small enough to estimate with reasonable accuracy and to plan into a time-box such as a Sprint."), _react.default.createElement("li", {
+    className: "rules-item"
+  }, _react.default.createElement("strong", {
+    className: "red"
+  }, "T"), " (Testable). Each PBI should have clear acceptance criteria which allow its satisfaction to be tested.")))), _react.default.createElement("div", {
+    id: "goal",
+    className: "container-fluid"
+  }, _react.default.createElement("div", {
+    className: "container"
+  }, _react.default.createElement("h3", {
+    className: "heading-2"
+  }, "Why?"), _react.default.createElement("p", {
+    className: "body-2"
+  }, "By observing a Definition of Ready, the chances are reduced of a Sprint starting where Development Team members immediately shake their heads at Product Backlog items they do not sufficiently understand."))), _react.default.createElement("div", {
+    id: "brainstorming",
+    className: "container-fluid"
+  }, _react.default.createElement("div", {
+    className: "container"
+  }, _react.default.createElement("h3", {
+    className: "heading-2"
+  }, "Brainstorming"), _react.default.createElement("p", {
+    className: "body-2"
+  }, "What else do you need to know about a User Story to be able to get it \"Done\"?"), _react.default.createElement("img", {
+    src: "./img/lightbulb-white.svg"
+  }))), _react.default.createElement(_reactScrollspy.default, {
+    items: ['catcher', 'rules', 'goal', 'brainstorming'],
+    className: "scrollspy",
+    currentClassName: "is-current"
+  }, _react.default.createElement("li", {
+    className: "item"
+  }, _react.default.createElement("a", {
+    href: "#catcher"
+  })), _react.default.createElement("li", {
+    className: "item"
+  }, _react.default.createElement("a", {
+    href: "#rules"
+  })), _react.default.createElement("li", {
+    className: "item"
+  }, _react.default.createElement("a", {
+    href: "#goal"
+  })), _react.default.createElement("li", {
+    className: "item"
+  }, _react.default.createElement("a", {
+    href: "#brainstorming"
+  }))));
+}
+
+var _default = Ready;
+exports.default = _default;
+
+/***/ }),
+
 /***/ "./src/components/SprintReview.js":
 /*!****************************************!*\
   !*** ./src/components/SprintReview.js ***!
@@ -24194,7 +24419,7 @@ function SprintReview(props) {
     id: "sprint-review",
     className: "sprint-review"
   }, _react.default.createElement("div", {
-    id: "section-1",
+    id: "catcher",
     className: "container-fluid"
   }, _react.default.createElement("div", {
     className: "container"
@@ -24206,7 +24431,12 @@ function SprintReview(props) {
     className: "red"
   }, "inspect"), " the Increment and ", _react.default.createElement("strong", {
     className: "red"
-  }, "adapt"), " the Product Backlog if needed\"")), _react.default.createElement("h3", {
+  }, "adapt"), " the Product Backlog if needed\"")))), _react.default.createElement("div", {
+    id: "rules",
+    className: "container-fluid"
+  }, _react.default.createElement("div", {
+    className: "container"
+  }, _react.default.createElement("h3", {
     className: "heading-2"
   }, "The Rules"), _react.default.createElement("ul", {
     className: "rules-list"
@@ -24222,93 +24452,32 @@ function SprintReview(props) {
     className: "red"
   }, "Proposal!"), " The Product Owner discusses the Product Backlog as it stands and check whether it needs to be adapted to new business requirements that might have arised."), _react.default.createElement("li", {
     className: "rules-item"
-  }, "The entire group collaborates on what to do next, so that the Sprint Review provides valuable input to subsequent Sprint Planning.")), _react.default.createElement("h3", {
-    className: "heading-2"
-  }, "The Goal"), _react.default.createElement("p", {
-    className: "body-2"
-  }, "The result of the Sprint Review is a revised Product Backlog that defines the probable Product Backlog items for the next Sprint. The Product Backlog may also be adjusted overall to meet new opportunities."))), _react.default.createElement("div", {
-    id: "section-2",
+  }, "The entire group collaborates on what to do next, so that the Sprint Review provides valuable input to subsequent Sprint Planning.")))), _react.default.createElement("div", {
+    id: "goal",
     className: "container-fluid"
   }, _react.default.createElement("div", {
     className: "container"
-  }, _react.default.createElement("h1", {
-    className: "heading-1"
-  }, "Spint Review"), _react.default.createElement("h2", {
-    className: "body-2"
-  }, _react.default.createElement("em", null, "\"A Sprint Review is held at the end of the Sprint to ", _react.default.createElement("strong", {
-    className: "red"
-  }, "inspect"), " the Increment and ", _react.default.createElement("strong", {
-    className: "red"
-  }, "adapt"), " the Product Backlog if needed\"")), _react.default.createElement("h3", {
-    className: "heading-2"
-  }, "The Rules"), _react.default.createElement("ul", {
-    className: "rules-list"
-  }, _react.default.createElement("li", {
-    className: "rules-item"
-  }, "The Product Owner explains what Product Backlog items have been \u201CDone\u201D and what has not been \u201CDone\u201D."), _react.default.createElement("li", {
-    className: "rules-item"
-  }, "The Development Team discusses what went well during the Sprint, what problems it ran into, and how those problems were solved."), _react.default.createElement("li", {
-    className: "rules-item"
-  }, "The Development Team demonstrates the work that it has \u201CDone\u201D and answers questions about the Increment."), _react.default.createElement("li", {
-    className: "rules-item"
-  }, _react.default.createElement("strong", {
-    className: "red"
-  }, "Proposal!"), " The Product Owner discusses the Product Backlog as it stands and check whether it needs to be adapted to new business requirements that might have arised."), _react.default.createElement("li", {
-    className: "rules-item"
-  }, "The entire group collaborates on what to do next, so that the Sprint Review provides valuable input to subsequent Sprint Planning.")), _react.default.createElement("h3", {
-    className: "heading-2"
-  }, "The Goal"), _react.default.createElement("p", {
-    className: "body-2"
-  }, "The result of the Sprint Review is a revised Product Backlog that defines the probable Product Backlog items for the next Sprint. The Product Backlog may also be adjusted overall to meet new opportunities."))), _react.default.createElement("div", {
-    id: "section-3",
-    className: "container-fluid"
-  }, _react.default.createElement("div", {
-    className: "container"
-  }, _react.default.createElement("h1", {
-    className: "heading-1"
-  }, "Spint Review"), _react.default.createElement("h2", {
-    className: "body-2"
-  }, _react.default.createElement("em", null, "\"A Sprint Review is held at the end of the Sprint to ", _react.default.createElement("strong", {
-    className: "red"
-  }, "inspect"), " the Increment and ", _react.default.createElement("strong", {
-    className: "red"
-  }, "adapt"), " the Product Backlog if needed\"")), _react.default.createElement("h3", {
-    className: "heading-2"
-  }, "The Rules"), _react.default.createElement("ul", {
-    className: "rules-list"
-  }, _react.default.createElement("li", {
-    className: "rules-item"
-  }, "The Product Owner explains what Product Backlog items have been \u201CDone\u201D and what has not been \u201CDone\u201D."), _react.default.createElement("li", {
-    className: "rules-item"
-  }, "The Development Team discusses what went well during the Sprint, what problems it ran into, and how those problems were solved."), _react.default.createElement("li", {
-    className: "rules-item"
-  }, "The Development Team demonstrates the work that it has \u201CDone\u201D and answers questions about the Increment."), _react.default.createElement("li", {
-    className: "rules-item"
-  }, _react.default.createElement("strong", {
-    className: "red"
-  }, "Proposal!"), " The Product Owner discusses the Product Backlog as it stands and check whether it needs to be adapted to new business requirements that might have arised."), _react.default.createElement("li", {
-    className: "rules-item"
-  }, "The entire group collaborates on what to do next, so that the Sprint Review provides valuable input to subsequent Sprint Planning.")), _react.default.createElement("h3", {
+  }, _react.default.createElement("h3", {
     className: "heading-2"
   }, "The Goal"), _react.default.createElement("p", {
     className: "body-2"
   }, "The result of the Sprint Review is a revised Product Backlog that defines the probable Product Backlog items for the next Sprint. The Product Backlog may also be adjusted overall to meet new opportunities."))), _react.default.createElement(_reactScrollspy.default, {
-    items: ['section-1', 'section-2', 'section-3'],
-    currentClassName: "is-current",
-    className: "scrollspy"
+    items: ['catcher', 'rules', 'goal'],
+    className: "scrollspy",
+    currentClassName: "is-current"
   }, _react.default.createElement("li", {
     className: "item"
   }, _react.default.createElement("a", {
-    href: "#section-1"
-  }, "section 1")), _react.default.createElement("li", {
+    href: "#catcher"
+  })), _react.default.createElement("li", {
     className: "item"
   }, _react.default.createElement("a", {
-    href: "#section-2"
-  }, "section 2")), _react.default.createElement("li", {
+    href: "#rules"
+  })), _react.default.createElement("li", {
     className: "item"
   }, _react.default.createElement("a", {
-    href: "#section-3"
-  }, "section 3"))));
+    href: "#goal"
+  }))));
 }
 
 var _default = SprintReview;
@@ -24338,6 +24507,17 @@ module.exports = __webpack_require__.p + "/assets/dot-circle-white.svg";
 
 /***/ }),
 
+/***/ "./src/img/lightbulb-white.svg":
+/*!*************************************!*\
+  !*** ./src/img/lightbulb-white.svg ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/assets/lightbulb-white.svg";
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -24357,6 +24537,8 @@ var _App = _interopRequireDefault(__webpack_require__(/*! ./components/App */ ".
 var _circleWhite = _interopRequireDefault(__webpack_require__(/*! ./img/circle-white.svg */ "./src/img/circle-white.svg"));
 
 var _dotCircleWhite = _interopRequireDefault(__webpack_require__(/*! ./img/dot-circle-white.svg */ "./src/img/dot-circle-white.svg"));
+
+var _lightbulbWhite = _interopRequireDefault(__webpack_require__(/*! ./img/lightbulb-white.svg */ "./src/img/lightbulb-white.svg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

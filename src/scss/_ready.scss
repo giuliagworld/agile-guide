@@ -1,0 +1,45 @@
+.ready {
+  width: 100%;
+  padding-top: 62px;
+  padding-bottom: 62px;
+  background-color: $black;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: $white;
+  @include media-breakpoint-up(md) {
+    padding-top: 102px;
+    background-size: cover;
+  }
+
+  .container-fluid {
+    height: calc(100vh - 102px);
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .rules-list {
+      list-style: none;
+      padding-left: 20px;
+      @include media-breakpoint-up(md) {
+        margin-left: 60px;
+        margin-right: 60px;
+      }
+      .rules-item {
+        padding: 10px 0;
+        text-align: left;
+        .red {
+          @include media-breakpoint-up(md) {
+            font-size: 50px;
+          }
+        }
+      }
+    }
+    .terms {
+      margin-top: 0px;
+      font-size: 14px;
+    }
+    .lightbulb {
+      margin-top: 43px;
+    }
+  }
+}

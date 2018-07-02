@@ -3,6 +3,8 @@ import Nav from 'react-burger-menu/lib/menus/slide';
 
 import Header from './Header';
 import SprintReview from './SprintReview';
+import Done from './Done';
+import Ready from './Ready';
 import Footer from './Footer';
 
 import { SocialIcon } from 'react-social-icons';
@@ -13,7 +15,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       menuOpen: false,
-      active: 'sprintReview'
+      active: 'ready'
     };
   }
 
@@ -40,12 +42,16 @@ class App extends React.Component {
           <Nav right isOpen={this.state.menuOpen} onStateChange={(state) => this.handleStateChange(state)}>
             <a className="menu-item" href="#" onClick={() => this.closeMenu('header')}>Home</a>
             <a className="menu-item" href="#sprint-review" onClick={() => this.closeMenu('sprintReview')}>Sprint Review</a>
-            <SocialIcon className="menu-item social" url="https://www.facebook.com/" color="white" />
-            <SocialIcon className="menu-item social" url="https://www.twitter.com/" color="white" />
+            <a className="menu-item" href="#done" onClick={() => this.closeMenu('done')}>"Done"</a>
+            <a className="menu-item" href="#ready" onClick={() => this.closeMenu('ready')}>"Ready"</a>
+            <SocialIcon className="menu-item social" url="https://www.linkedin.com/in/giuliagazzabin" color="white" />
+            <SocialIcon className="menu-item social" url="https://github.com/giuliagworld" color="white" />
           </Nav>
         </div>
         { this.state.active == 'header' ? <Header /> : null }
         { this.state.active == 'sprintReview' ? <SprintReview /> : null }
+        {this.state.active == 'done' ? <Done /> : null}
+        {this.state.active == 'ready' ? <Ready /> : null}
         <Footer />
       </div>
     )

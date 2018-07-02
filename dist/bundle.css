@@ -1268,36 +1268,12 @@ body {
   color: white; }
   @media (min-width: 768px) {
     .sprint-review {
-      min-height: 100vh;
-      height: 100vh;
       padding-top: 102px;
-      max-height: 995px;
       background-size: cover; } }
-  .sprint-review .scrollspy {
-    position: fixed;
-    left: 0;
-    top: 50%;
-    list-style: none; }
-    .sprint-review .scrollspy .item {
-      padding-left: 30px;
-      background-image: url("/assets/circle-white.svg");
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: 20px; }
-    .sprint-review .scrollspy a {
-      color: green; }
-    .sprint-review .scrollspy .is-current {
-      background-image: url("/assets/dot-circle-white.svg");
-      background-repeat: no-repeat;
-      background-position: left;
-      background-size: 20px;
-      padding-left: 30px; }
-      .sprint-review .scrollspy .is-current a {
-        color: red; }
   .sprint-review .container-fluid {
+    height: calc(100vh - 102px);
     background-color: black;
     display: flex;
-    height: 100%;
     flex-direction: column;
     justify-content: center; }
     .sprint-review .container-fluid .rules-list {
@@ -1309,6 +1285,92 @@ body {
       .sprint-review .container-fluid .rules-list .rules-item {
         padding: 10px 0;
         text-align: left; }
+
+.done {
+  width: 100%;
+  padding-top: 62px;
+  padding-bottom: 62px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: white; }
+  @media (min-width: 768px) {
+    .done {
+      padding-top: 102px;
+      background-size: cover; } }
+  .done .container-fluid {
+    height: calc(100vh - 102px);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .done .container-fluid .rules-list {
+      padding-left: 20px; }
+      @media (min-width: 768px) {
+        .done .container-fluid .rules-list {
+          margin-left: 60px;
+          margin-right: 60px; } }
+      .done .container-fluid .rules-list .rules-item {
+        padding: 10px 0;
+        text-align: left; }
+
+.ready {
+  width: 100%;
+  padding-top: 62px;
+  padding-bottom: 62px;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: white; }
+  @media (min-width: 768px) {
+    .ready {
+      padding-top: 102px;
+      background-size: cover; } }
+  .ready .container-fluid {
+    height: calc(100vh - 102px);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .ready .container-fluid .rules-list {
+      list-style: none;
+      padding-left: 20px; }
+      @media (min-width: 768px) {
+        .ready .container-fluid .rules-list {
+          margin-left: 60px;
+          margin-right: 60px; } }
+      .ready .container-fluid .rules-list .rules-item {
+        padding: 10px 0;
+        text-align: left; }
+        .ready .container-fluid .rules-list .rules-item .red {
+          font-size: 50px; }
+
+.scrollspy {
+  display: none; }
+  @media (min-width: 768px) {
+    .scrollspy {
+      display: block;
+      position: fixed;
+      left: 0;
+      top: 50%;
+      list-style: none;
+      text-align: left; }
+      .scrollspy .item {
+        padding-left: 30px;
+        background-image: url("/assets/circle-white.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 15px; }
+      .scrollspy a {
+        display: inline-block; }
+      .scrollspy .is-current {
+        background-image: url("/assets/dot-circle-white.svg");
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: 15px;
+        padding-left: 30px; }
+        .scrollspy .is-current a {
+          display: inline-block; } }
 
 .footer {
   clear: both;
