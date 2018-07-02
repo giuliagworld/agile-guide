@@ -44,7 +44,7 @@ class App extends React.Component {
             <a className="menu-item" href="#sprint-review" onClick={() => this.closeMenu('sprintReview')}>Sprint Review</a>
             <a className="menu-item" href="#done" onClick={() => this.closeMenu('done')}>"Done"</a>
             <a className="menu-item" href="#ready" onClick={() => this.closeMenu('ready')}>"Ready"</a>
-            <SocialIcon className="menu-item social" url="https://www.linkedin.com/in/giuliagazzabin" color="white" />
+            <SocialIcon className="menu-item social" url="https://linkedin.com/in/giuliagazzabin" color="white" />
             <SocialIcon className="menu-item social" url="https://github.com/giuliagworld" color="white" />
           </Nav>
         </div>
