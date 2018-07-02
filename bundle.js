@@ -24091,7 +24091,7 @@ function (_React$Component) {
         }
       }, "\"Ready\""), _react.default.createElement(_reactSocialIcons.SocialIcon, {
         className: "menu-item social",
-        url: "https://www.linkedin.com/in/giuliagazzabin",
+        url: "https://linkedin.com/in/giuliagazzabin",
         color: "white"
       }), _react.default.createElement(_reactSocialIcons.SocialIcon, {
         className: "menu-item social",
