@@ -24146,36 +24146,28 @@ function Done(props) {
   }, _react.default.createElement("em", null, "\"A clear and concise ", _react.default.createElement("strong", {
     className: "red"
   }, "list of requirements"), " that software must adhere to for the team to call it complete.\"")))), _react.default.createElement("div", {
-    id: "rules",
-    className: "container-fluid"
-  }, _react.default.createElement("div", {
-    className: "container"
-  }, _react.default.createElement("h3", {
-    className: "heading-2"
-  }, "The Rules"), _react.default.createElement("ul", {
-    className: "rules-list"
-  }, _react.default.createElement("li", {
-    className: "rules-item"
-  }, "The Product Owner explains what Product Backlog items have been \u201CDone\u201D and what has not been \u201CDone\u201D."), _react.default.createElement("li", {
-    className: "rules-item"
-  }, "The Development Team discusses what went well during the Sprint, what problems it ran into, and how those problems were solved."), _react.default.createElement("li", {
-    className: "rules-item"
-  }, "The Development Team demonstrates the work that it has \u201CDone\u201D and answers questions about the Increment."), _react.default.createElement("li", {
-    className: "rules-item"
-  }, _react.default.createElement("strong", {
-    className: "red"
-  }, "Proposal!"), " The Product Owner discusses the Product Backlog as it stands and check whether it needs to be adapted to new business requirements that might have arised."), _react.default.createElement("li", {
-    className: "rules-item"
-  }, "The entire group collaborates on what to do next, so that the Sprint Review provides valuable input to subsequent Sprint Planning.")))), _react.default.createElement("div", {
     id: "goal",
     className: "container-fluid"
   }, _react.default.createElement("div", {
     className: "container"
   }, _react.default.createElement("h3", {
     className: "heading-2"
-  }, "The Goal"), _react.default.createElement("p", {
+  }, "Why?"), _react.default.createElement("p", {
     className: "body-2"
-  }, "The result of the Sprint Review is a revised Product Backlog that defines the probable Product Backlog items for the next Sprint. The Product Backlog may also be adjusted overall to meet new opportunities."))), _react.default.createElement(_reactScrollspy.default, {
+  }, "Incomplete work has a nasty habit of mounting up, and without visibility of how much effort truly remains, the deficit can quickly get out of hand."))), _react.default.createElement("div", {
+    id: "brainstorming",
+    className: "container-fluid"
+  }, _react.default.createElement("div", {
+    className: "container"
+  }, _react.default.createElement("h3", {
+    className: "heading-2"
+  }, "Brainstorming"), _react.default.createElement("p", {
+    className: "body-2"
+  }, "When do you consider a User Story as \"Done\"?"), _react.default.createElement("img", {
+    className: "lightbulb",
+    src: "/assets/lightbulb-white.svg",
+    width: "100px"
+  }))), _react.default.createElement(_reactScrollspy.default, {
     items: ['catcher', 'rules', 'goal'],
     className: "scrollspy",
     currentClassName: "is-current"
@@ -24345,7 +24337,9 @@ function Ready(props) {
     className: "rules-item"
   }, _react.default.createElement("strong", {
     className: "red"
-  }, "T"), " (Testable). Each PBI should have clear acceptance criteria which allow its satisfaction to be tested.")))), _react.default.createElement("div", {
+  }, "T"), " (Testable). Each PBI should have clear acceptance criteria which allow its satisfaction to be tested.")), _react.default.createElement("p", {
+    className: "terms"
+  }, "* PBI: Product Backlog Item"))), _react.default.createElement("div", {
     id: "goal",
     className: "container-fluid"
   }, _react.default.createElement("div", {
@@ -24364,7 +24358,9 @@ function Ready(props) {
   }, "Brainstorming"), _react.default.createElement("p", {
     className: "body-2"
   }, "What else do you need to know about a User Story to be able to get it \"Done\"?"), _react.default.createElement("img", {
-    src: "./img/lightbulb-white.svg"
+    className: "lightbulb",
+    src: "/assets/lightbulb-white.svg",
+    width: "100px"
   }))), _react.default.createElement(_reactScrollspy.default, {
     items: ['catcher', 'rules', 'goal', 'brainstorming'],
     className: "scrollspy",

@@ -1313,6 +1313,8 @@ body {
       .done .container-fluid .rules-list .rules-item {
         padding: 10px 0;
         text-align: left; }
+    .done .container-fluid .lightbulb {
+      margin-top: 43px; }
 
 .ready {
   width: 100%;
@@ -1342,8 +1344,14 @@ body {
       .ready .container-fluid .rules-list .rules-item {
         padding: 10px 0;
         text-align: left; }
-        .ready .container-fluid .rules-list .rules-item .red {
-          font-size: 50px; }
+        @media (min-width: 768px) {
+          .ready .container-fluid .rules-list .rules-item .red {
+            font-size: 50px; } }
+    .ready .container-fluid .terms {
+      margin-top: 0px;
+      font-size: 14px; }
+    .ready .container-fluid .lightbulb {
+      margin-top: 43px; }
 
 .scrollspy {
   display: none; }
