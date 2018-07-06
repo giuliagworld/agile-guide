@@ -1365,14 +1365,14 @@ body {
       text-align: left; }
       .scrollspy .item {
         padding-left: 30px;
-        background-image: url("/assets/circle-white.svg");
+        background-image: url("/agile-guide/assets/circle-white.svg");
         background-repeat: no-repeat;
         background-position: left;
         background-size: 15px; }
       .scrollspy a {
         display: inline-block; }
       .scrollspy .is-current {
-        background-image: url("/assets/dot-circle-white.svg");
+        background-image: url("/agile-guide/assets/dot-circle-white.svg");
         background-repeat: no-repeat;
         background-position: left;
         background-size: 15px;

@@ -24045,7 +24045,7 @@ function (_React$Component) {
 
     _this.state = {
       menuOpen: false,
-      active: 'ready'
+      active: 'header'
     };
     return _this;
   } // This keeps your state in sync with the opening/closing of the menu
@@ -24165,7 +24165,7 @@ function Done(props) {
     className: "body-2"
   }, "When do you consider a User Story as \"Done\"?"), _react.default.createElement("img", {
     className: "lightbulb",
-    src: "/assets/lightbulb-white.svg",
+    src: "/agile-guide/assets/lightbulb-white.svg",
     width: "100px"
   }))), _react.default.createElement(_reactScrollspy.default, {
     items: ['catcher', 'rules', 'goal'],
@@ -24359,7 +24359,7 @@ function Ready(props) {
     className: "body-2"
   }, "What else do you need to know about a User Story to be able to get it \"Done\"?"), _react.default.createElement("img", {
     className: "lightbulb",
-    src: "/assets/lightbulb-white.svg",
+    src: "/agile-guide/assets/lightbulb-white.svg",
     width: "100px"
   }))), _react.default.createElement(_reactScrollspy.default, {
     items: ['catcher', 'rules', 'goal', 'brainstorming'],
