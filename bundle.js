@@ -24146,7 +24146,7 @@ function Done(props) {
   }, _react.default.createElement("em", null, "\"A clear and concise ", _react.default.createElement("strong", {
     className: "red"
   }, "list of requirements"), " that software must adhere to for the team to call it complete.\"")))), _react.default.createElement("div", {
-    id: "goal",
+    id: "why",
     className: "container-fluid"
   }, _react.default.createElement("div", {
     className: "container"
@@ -24168,7 +24168,7 @@ function Done(props) {
     src: "/agile-guide/assets/lightbulb-white.svg",
     width: "100px"
   }))), _react.default.createElement(_reactScrollspy.default, {
-    items: ['catcher', 'rules', 'goal'],
+    items: ['catcher', 'why', 'brainstorming'],
     className: "scrollspy",
     currentClassName: "is-current"
   }, _react.default.createElement("li", {
@@ -24340,7 +24340,7 @@ function Ready(props) {
   }, "T"), " (Testable). Each PBI should have clear acceptance criteria which allow its satisfaction to be tested.")), _react.default.createElement("p", {
     className: "terms"
   }, "* PBI: Product Backlog Item"))), _react.default.createElement("div", {
-    id: "goal",
+    id: "why",
     className: "container-fluid"
   }, _react.default.createElement("div", {
     className: "container"
@@ -24362,7 +24362,7 @@ function Ready(props) {
     src: "/agile-guide/assets/lightbulb-white.svg",
     width: "100px"
   }))), _react.default.createElement(_reactScrollspy.default, {
-    items: ['catcher', 'rules', 'goal', 'brainstorming'],
+    items: ['catcher', 'rules', 'why', 'brainstorming'],
     className: "scrollspy",
     currentClassName: "is-current"
   }, _react.default.createElement("li", {
