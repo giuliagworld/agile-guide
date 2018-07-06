@@ -10,7 +10,7 @@ function Done(props) {
           <h2 className="body-2"><em>"A clear and concise <strong className="red">list of requirements</strong> that software must adhere to for the team to call it complete."</em></h2>
         </div>
       </div>
-      <div id="goal" className="container-fluid">
+      <div id="why" className="container-fluid">
         <div className="container">
           <h3 className="heading-2">Why?</h3>
           <p className="body-2">Incomplete work has a nasty habit of mounting up, and without visibility of how much effort truly remains, the deficit can quickly get out of hand.</p>
@@ -24,7 +24,7 @@ function Done(props) {
           {/* <img className="lightbulb" src="/assets/lightbulb-white.svg" width="100px" /> */}
         </div>
       </div>
-      <Scrollspy items={['catcher', 'rules', 'goal']} className="scrollspy" currentClassName="is-current">
+      <Scrollspy items={['catcher', 'why', 'brainstorming']} className="scrollspy" currentClassName="is-current">
         <li className="item"><a href="#catcher"></a></li>
         <li className="item"><a href="#rules"></a></li>
         <li className="item"><a href="#goal"></a></li>

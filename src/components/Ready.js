@@ -24,7 +24,7 @@ function Ready(props) {
           <p className="terms">* PBI: Product Backlog Item</p>
         </div>
       </div>
-      <div id="goal" className="container-fluid">
+      <div id="why" className="container-fluid">
         <div className="container">
           <h3 className="heading-2">Why?</h3>
           <p className="body-2">By observing a Definition of Ready, the chances are reduced of a Sprint starting where Development Team members immediately shake their heads at Product Backlog items they do not sufficiently understand.</p>
@@ -38,7 +38,7 @@ function Ready(props) {
           {/* <img className="lightbulb" src="/assets/lightbulb-white.svg" width="100px" /> */}
         </div>
       </div>
-      <Scrollspy items={['catcher', 'rules', 'goal', 'brainstorming']} className="scrollspy" currentClassName="is-current">
+      <Scrollspy items={['catcher', 'rules', 'why', 'brainstorming']} className="scrollspy" currentClassName="is-current">
         <li className="item"><a href="#catcher"></a></li>
         <li className="item"><a href="#rules"></a></li>
         <li className="item"><a href="#goal"></a></li>
