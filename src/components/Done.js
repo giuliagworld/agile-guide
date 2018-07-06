@@ -20,7 +20,8 @@ function Done(props) {
         <div className="container">
           <h3 className="heading-2">Brainstorming</h3>
           <p className="body-2">When do you consider a User Story as "Done"?</p>
-          <img className="lightbulb" src="/assets/lightbulb-white.svg" width="100px" />
+          <img className="lightbulb" src="/agile-guide/assets/lightbulb-white.svg" width="100px" />
+          {/* <img className="lightbulb" src="/assets/lightbulb-white.svg" width="100px" /> */}
         </div>
       </div>
       <Scrollspy items={['catcher', 'rules', 'goal']} className="scrollspy" currentClassName="is-current">

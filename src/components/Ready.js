@@ -34,7 +34,8 @@ function Ready(props) {
         <div className="container">
           <h3 className="heading-2">Brainstorming</h3>
           <p className="body-2">What else do you need to know about a User Story to be able to get it "Done"?</p>
-          <img className="lightbulb" src="/assets/lightbulb-white.svg" width="100px" />
+          <img className="lightbulb" src="/agile-guide/assets/lightbulb-white.svg" width="100px" />
+          {/* <img className="lightbulb" src="/assets/lightbulb-white.svg" width="100px" /> */}
         </div>
       </div>
       <Scrollspy items={['catcher', 'rules', 'goal', 'brainstorming']} className="scrollspy" currentClassName="is-current">
